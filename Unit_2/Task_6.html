@@ -1,0 +1,31 @@
+6. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), где arg1, arg2 – значения
+аргументов, operation – строка с названием операции. В зависимости от переданного значения операции выполнить одну из
+арифметических операций (использовать функции из пункта 5) и вернуть полученное значение (использовать switch).
+
+<script>
+    function plus(a, b) {
+        return a + b;
+    }
+    function minus(a, b) {
+        return a - b;
+    }
+    function proizvedenie(a, b) {
+        return a * b;
+    }
+    function chastnoe(a, b) {
+        return a / b;
+    }
+
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case '+':
+                return console.log(plus(a, b));
+            case '-':
+                return console.log(minus(a, b));
+            case '*':
+                return console.log(proizvedenie(a, b));
+            case '/':
+                return console.log(chastnoe(a, b));
+        }
+    }
+</script>
